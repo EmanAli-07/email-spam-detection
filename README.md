@@ -1,60 +1,66 @@
-# email-spam-detection
-# 📧 Email Spam Detection System
+# 📧 Email Spam Detection using Deep Learning (LSTM)
 
-This project implements a **spam detection system** using **machine learning techniques** to classify email messages as either **spam** or **not spam**. It also demonstrates potential integration with **speech-to-text conversion** using OpenAI's Whisper for handling voice messages.
+This project implements a **spam detection system** using a **Deep Learning model (LSTM)** built with **TensorFlow** and **Keras** to classify email messages as **spam** or **not spam**. It also demonstrates tokenization, sequence padding, and model saving for real-world deployment.
 
 ## 🚀 Project Overview
 
-Spam emails are a persistent nuisance and can pose serious cybersecurity threats. This system was designed to:
-- Preprocess and clean email text data
-- Train a classification model (e.g., Naive Bayes, SVM)
-- Evaluate the model's accuracy and performance
-- Optionally integrate Whisper for converting audio to text for spam analysis
+Spam detection is a critical task in communication systems. This project leverages deep learning to:
+- Preprocess and tokenize email text data
+- Build and train a Long Short-Term Memory (LSTM) model
+- Save the trained model and tokenizer for future use
+- Prepare for potential integration with OpenAI Whisper for audio message transcription
+
+
+## 🧠 Deep Learning Model
+
+The architecture includes:
+- Embedding Layer (for word vectors)
+- Bidirectional LSTM Layers
+- Dropout Layers (to avoid overfitting)
+- Dense Layer with Sigmoid Activation (for binary classification)
+
+> 📁 Model is saved as `spam_detection_lstm.h5`  
+> 📦 Tokenizer is saved as `tokenizer.pkl`
 
 ## 📁 Dataset
 
-We use a cleaned dataset from Kaggle containing labeled spam and ham (non-spam) emails:
+The model was trained on the combined dataset from Kaggle:
 
-- ✅ Balanced classes
-- ✅ Lightweight (<100MB)
-- ✅ Ideal for fast training
+[🔗 Kaggle Email Spam Classification Dataset](https://www.kaggle.com/datasets/purusinghvi/email-spam-classification-dataset)
 
-[🔗 Kaggle Dataset](https://www.kaggle.com/datasets/purusinghvi/email-spam-classification-dataset)
+- Cleaned email messages labeled as spam or ham (not spam)
+- Dataset used: `combined_data.csv`
 
 ## 🛠️ Tech Stack
 
 | Tool | Purpose |
 |------|---------|
-| Python | Core programming language |
-| Scikit-learn | Machine learning models |
-| Pandas & NumPy | Data manipulation |
-| Matplotlib & Seaborn | Visualization |
+| Python | Core programming |
+| TensorFlow / Keras | Deep learning |
+| Pandas / NumPy | Data manipulation |
+| Scikit-learn | Preprocessing and splitting |
+| Pickle | Model/tokenizer serialization |
 | Jupyter Notebook | Development interface |
-| OpenAI Whisper (optional) | Audio to text conversion |
 
-## 🧠 Model Used
+## 📊 Results
 
-The notebook tests multiple classifiers:
-- **Naive Bayes**
-- **Logistic Regression**
-- **Support Vector Machine (SVM)**
-
-Performance is evaluated using:
-- Accuracy
-- Precision, Recall, F1-Score
-- Confusion Matrix
+The model achieves:
+- ✅ High accuracy on the validation set
+- ✅ Fast convergence within 5 epochs
+- ✅ Exportable and loadable for real-time use
 
 
-## 🔮 Future Enhancements
+## 🧪 Future Work
 
-- Integrate with Whisper to detect spam in voice messages
-- Build a lightweight web app for user uploads
+- Integrate Whisper (OpenAI) to convert voice to text for spam detection
+- Deploy using Flask or Streamlit as a web app
 - Add adversarial training for robustness
 
-## 🔗 Connect with Me
+## 🙋‍♀️ Author
 
-Built by [**Eman Ali**](https://www.linkedin.com/in/eman-ali/)  
+Made by **Eman Ali**  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/eman-ali/)
 
-## 📌 License
+## 📄 License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
