@@ -11,8 +11,6 @@ Spam emails are a persistent nuisance and can pose serious cybersecurity threats
 - Evaluate the model's accuracy and performance
 - Optionally integrate Whisper for converting audio to text for spam analysis
 
----
-
 ## 📁 Dataset
 
 We use a cleaned dataset from Kaggle containing labeled spam and ham (non-spam) emails:
@@ -22,8 +20,6 @@ We use a cleaned dataset from Kaggle containing labeled spam and ham (non-spam) 
 - ✅ Ideal for fast training
 
 [🔗 Kaggle Dataset](https://www.kaggle.com/datasets/purusinghvi/email-spam-classification-dataset)
-
----
 
 ## 🛠️ Tech Stack
 
@@ -35,8 +31,6 @@ We use a cleaned dataset from Kaggle containing labeled spam and ham (non-spam) 
 | Matplotlib & Seaborn | Visualization |
 | Jupyter Notebook | Development interface |
 | OpenAI Whisper (optional) | Audio to text conversion |
-
----
 
 ## 🧠 Model Used
 
@@ -50,7 +44,6 @@ Performance is evaluated using:
 - Precision, Recall, F1-Score
 - Confusion Matrix
 
----
 
 ## 🔮 Future Enhancements
 
@@ -58,22 +51,9 @@ Performance is evaluated using:
 - Build a lightweight web app for user uploads
 - Add adversarial training for robustness
 
----
-
-## 📷 Project Screenshots
-
-*(You can add images here)*  
-`![](screenshots/pipeline.png)`  
-`![](screenshots/results.png)`
-
----
-
 ## 🔗 Connect with Me
 
 Built by [**Eman Ali**](https://www.linkedin.com/in/eman-ali/)  
-View this project on LinkedIn via [Arch Technologies](https://www.linkedin.com/company/arch-technologies)
-
----
 
 ## 📌 License
 
